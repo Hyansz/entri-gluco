@@ -1,0 +1,70 @@
+---
+import { Image } from "astro:assets";
+import gluco from "../assets/gluco.png";
+import logo from "../assets/logo.webp";
+---
+
+<section
+    class="relative mx-auto max-w-[2000px] max-h-[841px] h-screen overflow-hidden text-white bg-[radial-gradient(circle_at_50%_-2%,#06A0DC_0%,#078AD0_35%,#0A73C6_55%,#095AB4_75%,#095AB4_100%)]"
+>
+    <!-- NAVBAR -->
+    <div
+        class="hero-nav flex items-center w-[95%] justify-between mx-auto pt-4 md:pt-6 relative z-20"
+    >
+        <Image src={logo} alt="logo" width={1200} class="w-40 md:w-60" />
+
+        <a href="https://shopee.co.id/" target="_blank">
+            <button
+                class="bg-white text-[#095AB4] font-semibold uppercase poppins py-2 md:py-3 px-4 md:px-6 rounded-lg shadow-md duration-500 hover:scale-105 transition cursor-pointer text-sm md:text-base"
+            >
+                Beli Sekarang
+            </button>
+        </a>
+    </div>
+
+    <!-- BACKGROUND TEXT -->
+    <div
+        class="absolute inset-0 flex flex-col justify-center items-center leading-none select-none pointer-events-none"
+    >
+        <!-- TOP -->
+        <h1
+            class="gluco-top text-5xl md:text-[120px] lg:text-[160px] uppercase kanit tracking-[20%] text-white/80 absolute"
+        >
+            GLUCO N3
+        </h1>
+
+        <!-- CENTER -->
+        <h1
+            class="gluco-center text-5xl md:text-[120px] lg:text-[160px] uppercase kanit tracking-[20%]"
+        >
+            GLUCO N3
+        </h1>
+
+        <!-- BOTTOM -->
+        <h1
+            class="gluco-bottom text-5xl md:text-[120px] lg:text-[160px] uppercase kanit tracking-[20%] text-white/80 absolute"
+        >
+            GLUCO N3
+        </h1>
+    </div>
+
+    <!-- PRODUCT IMAGE -->
+    <div class="absolute inset-0 flex items-center justify-center z-10">
+        <div
+            class="absolute inset-0 flex items-center justify-center pointer-events-none"
+        >
+            <div
+                class="w-[320px] h-[320px] md:w-[500px] md:h-[500px] lg:w-[650px] lg:h-[650px] bg-[#0CA8E0]/35 blur-[140px] rounded-full"
+            >
+            </div>
+        </div>
+
+        <Image
+            src={gluco}
+            alt="Gluco N3"
+            width={520}
+            quality={85}
+            class="hero-product opacity-0 drop-shadow-[0_40px_60px_rgba(0,0,0,0.45)] hover:scale-105 transition duration-500"
+        />
+    </div>
+</section>

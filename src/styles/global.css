@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+.kanit {
+    font-family: "Kanit", sans-serif;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+/* HERO PRODUCT ANIMATION */
+
+@keyframes heroFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(60px) scale(0.96);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-6px) scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes floatSoft {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.hero-product {
+    opacity: 0;
+
+    animation:
+        heroFadeUp 1.1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards,
+        floatSoft 4s ease-in-out infinite;
+
+    animation-delay: 1.3s, 2.4s;
+}
+
+/* --------------------------------- */
+
+/* CENTER APPEAR + ZOOM */
+@keyframes centerZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+        filter: blur(10px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+/* TEXT SPLIT UP */
+@keyframes splitUp {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: translateY(-1.0em);
+    }
+}
+
+/* TEXT SPLIT DOWN */
+@keyframes splitDown {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: translateY(1.0em);
+    }
+}
+
+.gluco-center {
+    animation: centerZoom 1.3s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+.gluco-top {
+    opacity: 0;
+    animation: splitUp 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    animation-delay: 1.3s;
+}
+
+.gluco-bottom {
+    opacity: 0;
+    animation: splitDown 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    animation-delay: 1.3s;
+}
+
+/* NAVBAR ZOOM IN */
+
+@keyframes navZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(-10px);
+        filter: blur(6px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: blur(0);
+    }
+}
+
+.hero-nav {
+    opacity: 0;
+    animation: navZoom 0.9s cubic-bezier(.25,.8,.25,1) forwards;
+    animation-delay: 1.3s;
+}

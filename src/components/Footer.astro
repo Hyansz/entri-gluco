@@ -1,0 +1,86 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import product from "../assets/gluco-2.png";
+import indo from "../assets/100-indo.png";
+import bangga from "../assets/bangga-indonesia.png";
+---
+
+<footer
+    class="relative overflow-hidden bg-gradient-to-b from-[#095DB6] to-[#042950] text-white poppins"
+>
+    <div class="max-w-7xl mx-auto px-6 pt-16 pb-10 relative z-10">
+        <!-- SOCIAL ICON -->
+        <div
+            class="flex md:absolute md:right-6 md:top-16 gap-3 justify-center md:justify-end mb-8 md:mb-0"
+        >
+            <a
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:scale-110 transition duration-500 cursor-pointer"
+            >
+                <Icon
+                    name="simple-icons:instagram"
+                    class="w-4 h-4 text-white"
+                />
+            </a>
+
+            <a
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 hover:bg-[#1877F2] hover:scale-110 transition duration-500 cursor-pointer"
+            >
+                <Icon name="simple-icons:facebook" class="w-4 h-4 text-white" />
+            </a>
+
+            <a
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 hover:bg-black hover:scale-110 transition duration-500 cursor-pointer"
+            >
+                <Icon name="simple-icons:tiktok" class="w-4 h-4 text-white" />
+            </a>
+
+            <a
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 hover:bg-[#25D366] hover:scale-110 transition duration-500 cursor-pointer"
+            >
+                <Icon name="simple-icons:whatsapp" class="w-4 h-4 text-white" />
+            </a>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="max-w-xl space-y-4 text-center md:text-left">
+            <h3 class="text-xl md:text-2xl font-bold tracking-wide">Alamat</h3>
+
+            <p class="text-white/90 leading-relaxed text-base md:text-[20px]">
+                DK SAMIRUKUN, RT.7/RW.11, Samirukun, Plesungan, Kec.
+                Gondangrejo, Kabupaten Karanganyar, Jawa Tengah 57127
+            </p>
+
+            <!-- BADGES -->
+            <div
+                class="flex items-center justify-center md:justify-start gap-4 md:gap-6 pt-4 bg-white rounded-xl px-6 md:px-8 py-3 w-fit mx-auto md:mx-0 shadow-sm"
+            >
+                <Image
+                    src={indo}
+                    alt="100% Indonesia"
+                    width={120}
+                    class="h-10 md:h-12 object-contain"
+                />
+
+                <Image
+                    src={bangga}
+                    alt="Bangga Buatan Indonesia"
+                    width={60}
+                    class="h-10 md:h-12 object-contain"
+                />
+            </div>
+
+            <p class="pt-6 md:pt-8 text-white/80 text-xs md:text-sm">
+                © Copyright 2026 | PT Entri Jaya Makmur
+            </p>
+        </div>
+    </div>
+
+    <!-- PRODUCT IMAGE -->
+    <Image
+        src={product}
+        alt="Gluco N3"
+        width={620}
+        class="absolute right-[-120px] md:right-[140px] bottom-[-220px] md:bottom-[-180px] w-[360px] md:w-[620px] drop-shadow-[0_30px_50px_rgba(0,0,0,0.45)] pointer-events-none hidden lg:block"
+    />
+</footer>

@@ -1,0 +1,177 @@
+---
+import { Image } from "astro:assets";
+
+import box from "../assets/box-gluco.png";
+import check from "../assets/check.png";
+
+import shopee from "../assets/shopee.png";
+import tiktok from "../assets/tiktok.png";
+import tokopedia from "../assets/tokopedia.webp";
+---
+
+<section
+    class="py-16 md:py-24 mx-auto max-w-[2000px] bg-linear-to-b from-[#095AB4] to-[#078AD0] poppins"
+>
+    <div
+        class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-12 items-center px-6"
+    >
+        <Image
+            src={box}
+            alt="N3 Gluco"
+            widths={[600, 900, 1200, 1500]}
+            sizes="(max-width: 768px) 100vw, 520px"
+            quality={100}
+            format="webp"
+            loading="eager"
+            class="rounded-xl mx-auto md:mx-0 w-full max-w-[520px]"
+        />
+
+        <div class="text-center md:text-left">
+            <h2 class="text-6xl md:text-7xl text-white font-bold mb-2">
+                N3 Gluco
+            </h2>
+
+            <p
+                class="text-white font-semibold mb-4 text-2xl md:text-4xl leading-tight"
+            >
+                Blood Glucose Monitoring System
+                <br />
+                <span
+                    class="font-light text-base sm:text-lg md:text-2xl tracking-wide"
+                >
+                    for in vitro diagnostic use
+                </span>
+            </p>
+
+            <div
+                class="flex flex-wrap items-center justify-center md:justify-start gap-2 text-white mt-4"
+            >
+                <p
+                    class="bg-[#FD6101] px-3 py-1 font-semibold text-sm md:text-lg rounded-lg tracking-widest"
+                >
+                    ENT-G02
+                </p>
+
+                <p
+                    class="border-l-2 pl-3 py-1 ml-2 text-left text-sm md:text-xl font-semibold tracking-widest w-[50%] md:w-auto"
+                >
+                    KEMENKES RI AKD 20101521653
+                </p>
+            </div>
+
+            <p
+                class="text-lg md:text-[22px] text-white mt-4 font-semibold tracking-wide text-justify"
+            >
+                Teknologi Glucometer Generasi Baru dengan Fitur Cek Gula Darah
+                sekaligus Cek HCT (Hematokrit) dalam satu alat praktis.
+            </p>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto mt-10 px-6">
+        <p
+            class="text-center text-lg md:text-[22px] text-white mb-5 tracking-wide"
+        >
+            <b>Fitur Cek Hematokrit</b> membantu mendeteksi secara dini indikasi penyakit
+            seperti :
+        </p>
+
+        <div
+            class="text-white flex flex-col md:flex-row items-center justify-center gap-3"
+        >
+            <div
+                class="flex items-center gap-2 border border-white rounded-2xl px-3 py-1"
+            >
+                <Image src={check} alt="" width={20} />
+                <p>Gangguan Ginjal</p>
+            </div>
+
+            <div
+                class="flex items-center gap-2 border border-white rounded-2xl px-3 py-1"
+            >
+                <Image src={check} alt="" width={20} />
+                <p>Penyakit Jantung</p>
+            </div>
+
+            <div
+                class="flex items-center gap-2 border border-white rounded-2xl px-3 py-1"
+            >
+                <Image src={check} alt="" width={20} />
+                <p>Kelainan Darah</p>
+            </div>
+
+            <div
+                class="flex items-center gap-2 border border-white rounded-2xl px-3 py-1"
+            >
+                <Image src={check} alt="" width={20} />
+                <p>Cek Anemia</p>
+            </div>
+
+            <div
+                class="flex items-center gap-2 border border-white rounded-2xl px-3 py-1"
+            >
+                <Image src={check} alt="" width={20} />
+                <p>Dehidrasi</p>
+            </div>
+        </div>
+
+        <div class="mt-10">
+            <h1 class="text-white font-semibold text-xl text-center mb-6">
+                Dapatkan Produk di :
+            </h1>
+            <div
+                class="text-white flex flex-wrap items-center justify-center gap-6"
+            >
+                <a
+                    href="https://shopee.co.id/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center md:justify-start gap-2 bg-white/20 backdrop-blur-md p-3 rounded-full md:bg-transparent md:backdrop-blur-none md:p-0 hover:scale-105 hover:shadow-[0_0_20px_rgba(238,77,45,0.6)] md:hover:shadow-none transition duration-500"
+                >
+                    <Image src={shopee} alt="Shopee" width={32} />
+                    <p
+                        class="text-lg md:text-xl font-semibold tracking-wider hidden md:block"
+                    >
+                        Shopee
+                    </p>
+                </a>
+
+                <a
+                    href="https://www.tiktok.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center md:justify-start gap-2 bg-white/20 backdrop-blur-md p-3 rounded-full md:bg-transparent md:backdrop-blur-none md:p-0 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,0,0,0.6)] transition duration-500 md:hover:shadow-none"
+                >
+                    <Image src={tiktok} alt="TikTok Shop" width={32} />
+                    <p
+                        class="text-lg md:text-xl font-semibold tracking-wider hidden md:block"
+                    >
+                        TiktokShop
+                    </p>
+                </a>
+
+                <a
+                    href="https://www.tokopedia.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center md:justify-start gap-2 bg-white/20 backdrop-blur-md p-3 rounded-full md:bg-transparent md:backdrop-blur-none md:p-0 hover:scale-105 hover:shadow-[0_0_20px_rgba(3,172,14,0.6)] transition duration-500 md:hover:shadow-none"
+                >
+                    <Image src={tokopedia} alt="Tokopedia" width={32} />
+                    <p
+                        class="text-lg md:text-xl font-semibold tracking-wider hidden md:block"
+                    >
+                        Tokopedia
+                    </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-10">
+            <button
+                class="bg-white text-[#0781CA] font-bold uppercase tracking-wider px-6 py-3 rounded-lg w-full sm:w-[60%] md:w-[30%] transition-all duration-300 ease-out hover:scale-105 hover:shadow-[0_8px_30px_rgba(7,129,202,0.35)] active:scale-95 cursor-pointer"
+            >
+                Beli Sekarang
+            </button>
+        </div>
+    </div>
+</section>
