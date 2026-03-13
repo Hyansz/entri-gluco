@@ -12,8 +12,32 @@ import tokopedia from "../assets/tokopedia.webp";
 <section
     class="py-16 md:py-24 mx-auto max-w-[2000px] bg-linear-to-b from-[#095AB4] to-[#078AD0] poppins"
 >
+    <div class="max-w-5xl mx-auto px-6 w-full">
+        <div class="text-center mb-10 md:mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-white">
+                Kenali N3 Gluco Lebih Dekat
+            </h2>
+            <p class="text-white/80 mt-2 text-lg">
+                Lihat fitur, bundle produk, dan keunggulan N3 Gluco dalam video
+                singkat.
+            </p>
+        </div>
+
+        <div
+            class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10"
+        >
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/CYJy1hI7CsY?rel=0&modestbranding=1"
+                title="Product Video"
+                loading="lazy"
+                allowfullscreen
+            >
+            </iframe>
+        </div>
+    </div>
     <div
-        class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-12 items-center px-6"
+        class="max-w-7xl mx-auto mt-20 md:mt-28 grid md:grid-cols-2 gap-10 md:gap-12 items-center px-6"
     >
         <Image
             src={box}
@@ -27,12 +51,12 @@ import tokopedia from "../assets/tokopedia.webp";
         />
 
         <div class="text-center md:text-left">
-            <h2 class="text-6xl md:text-7xl text-white font-bold mb-2">
+            <h2 class="text-4xl sm:text-5xl md:text-7xl text-white font-bold mb-2">
                 N3 Gluco
             </h2>
 
             <p
-                class="text-white font-semibold mb-4 text-2xl md:text-4xl leading-tight"
+                class="text-white font-semibold mb-4 text-xl sm:text-2xl md:text-4xl leading-tight"
             >
                 Blood Glucose Monitoring System
                 <br />
